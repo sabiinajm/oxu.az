@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- npx tailwindcss -i ./src/input.css -o ./src/output.css --watch -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/src/style.css">
+    <link href="/src/output.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="sticky w-full top-0 left-0 bg-white z-[60] ">
+        <div class="hidden bg-[#051d39] text-white uppercase md:flex items-center">
+            <div class="container mx-auto px-6 flex items-center">
+                <i class="text-lg fa-solid fa-bolt pr-4"></i>
+                <div class=" relative h-9 w-full overflow-hidden flex items-center">
+                    <ul id="movingText1"
+                        class="flex absolute text-white gap-12 left-[100%] h-9 items-center list-disc whitespace-nowrap px-2 text-sm font-semibold  max-w-[90%]">
+                        <li>
+                            <a href="#">Gəncəyə ikinci raket hücumundan dörd il ötür</a>
+                        </li>
+                        <li>
+                            <a href="#">Həftəsonu Avropanın yaşıl meydanlarında keçiriləcək görüşlərin AFİŞASI</a>
+                        </li>
+                        <li>
+                            <a href="#">Zənglərin ardı-arası kəsilmir: Uşaqlar niyə kütləvi şəkildə xəstələnirlər?</a>
+                        </li>
+                        <li>
+                            <a href="#">Bu xəbərləri qaçırmayın: 05.10.2024-ün ən mühüm hadisələri</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container mx-auto px-6">
+            <nav class="flex items-center h-20 justify-between md:gap-10">
+                <div class="flex">
+                    <img src="https://images.oxu.az/statics/AVOjWzrES8VbbZviU57gbi49tXeYNis7PgTFdHgd.svg" alt="Oxu.az"
+                        class="default-logo min-w-[100px]" width="135" height="20">
+                    <img src="https://images.oxu.az/statics/HUgkpzUFW3YH7mjfasWA5XinecZU7opih7ASlYyg.webp" alt="Oxu.az"
+                        width="32" height="32" class="xb_logo">
+                </div>
+                <div class="px-6 bg-white">
+                    <a href="#"
+                        class="bg-[#f63147] hidden md:flex live items-center justify-center w-[85px] h-[35px] p-2 text-white uppercase rounded-full font-bold gap-2">
+                        <img src="img/live.png" alt="" class="w-[25px] object-cover">Live</a>
+                </div>
+                <div class="swiper1 mySwiper flex overflow-hidden">
+                    <ul class="swiper-wrapper flex gap-3 whitespace-nowrap min-w-[230px] max-w-[700px] bg-white">
+                        <li class="swiper-slide"><a href="#"
+                                class="md:inline-block hidden hover:border-gray-500 duration-200 border-2 py-1 px-4 rounded-full text-xl">İlham
+                                Əliyev
+                            </a></li>
+                        <li class="swiper-slide"><a href="#"
+                                class="md:inline-block hidden border-2 hover:border-gray-500 duration-200 py-1 px-4 rounded-full text-xl">İran-İsrail
+                                münasibətləri</a></li>
+                        <li><a href="#" class="md:inline-block hidden border-2 hover:border-gray-500 duration-200 py-1 px-4 rounded-full text-xl">COP29</a>
+                        </li>
+                        <li><a href="#" class="md:inline-block hidden border-2 hover:border-gray-500 duration-200 py-1 px-4 rounded-full text-xl">Günün
+                                əsas
+                                xəbərləri</a></li>
+                    </ul>
+                </div>
+                <div class="flex items-center">
+                    <i class="fa-solid fa-magnifying-glass text-xl mr-6 text-gray-600"></i>
+                    <a href="#" class="border-2 rounded-full mr-6 py-1 px-3 border-black font-bold md:hidden">RU</a>
+                    <i class="fa-solid fa-bars text-xl"></i>
+                </div>
+            </nav>
+            <div class="swiper1 mySwiper flex md:hidden items-center py-4 overflow-hidden">
+                <div class="live-content pr-3 z-20 w-[95px] h-[40px] bg-white">
+                    <a href="#"
+                        class="bg-[#f63147] flex md:hidden live items-center justify-center w-[85px] h-[35px] p-2 text-white uppercase rounded-full font-bold gap-2">
+                        <img src="img/live.png" alt="" class="w-[25px] object-cover">Live</a>
+                </div>
+
+                <ul class="swiper-wrapper flex gap-3 whitespace-nowrap w-full bg-white">
+                    <li class="swiper-slide"><a href="#"
+                            class="inline-block md:hidden border-2 py-1 px-4 rounded-full text-xl">İlham Əliyev
+                        </a></li>
+                    <li class="swiper-slide"><a href="#"
+                            class="inline-block md:hidden border-2 py-1 px-4 rounded-full text-xl">İran-İsrail
+                            münasibətləri</a></li>
+                    <li><a href="#" class="inline-block md:hidden border-2 py-1 px-4 rounded-full text-xl">COP29</a>
+                    </li>
+                    <li><a href="#" class="inline-block md:hidden border-2 py-1 px-4 rounded-full text-xl">Günün əsas
+                            xəbərləri</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="bg-[#051d39] md:hidden text-white uppercase flex items-center">
+            <div class="container mx-auto px-6 flex items-center">
+                <i class="text-lg fa-solid fa-bolt pr-4"></i>
+                <div class=" relative h-9 w-full overflow-hidden flex items-center">
+                    <ul id="movingText2"
+                        class="flex absolute text-white gap-12 left-[100%] h-9 items-center list-disc whitespace-nowrap px-2 text-sm font-semibold  max-w-[90%]">
+                        <li>
+                            <a href="#">Gəncəyə ikinci raket hücumundan dörd il ötür</a>
+                        </li>
+                        <li>
+                            <a href="#">Həftəsonu Avropanın yaşıl meydanlarında keçiriləcək görüşlərin AFİŞASI</a>
+                        </li>
+                        <li>
+                            <a href="#">Zənglərin ardı-arası kəsilmir: Uşaqlar niyə kütləvi şəkildə xəstələnirlər?</a>
+                        </li>
+                        <li>
+                            <a href="#">Bu xəbərləri qaçırmayın: 05.10.2024-ün ən mühüm hadisələri</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <!-- main news -->
+        <div
+            class=" w-full mb-20 lg:w-[700px] lg:relative lg:ml-10 shadow-md shadow-slate-400 hover:shadow-lg transition-shadow duration-200">
+            <img class="w-full" src="https://images.oxu.az/2024/10/06/8xZBE9YWPImDc8Dr8SKmtvvXDZLIGm33vc3FAKdn:640.webp"
+                alt="2-ci Ordu Korpusunun komandiri dəyişdi, Mayis Bərxudarov sərəncama götürüldü" width="640"
+                height="405">
+            <div
+                class="p-4 max-w-[600px] lg:bg-[#ffffffbd] lg:absolute top-96 left-14 lg:shadow-md lg:shadow-slate-300 lg:hover:shadow-lg lg:transition-shadow lg:duration-200">
+                <div class="flex py-4">
+                    <h4 class="uppercase text-sm text-[#1894A0] font-bold">Ordu</h4>
+                    <h4 class="uppercase text-sm text-gray-500 font-bold pl-6"><i
+                            class="fa-regular fa-calendar-days"></i> 4 okt, 2024 / 12:30</h4>
+                    <h4 class="uppercase text-sm text-gray-500 font-bold pl-6"><i class="fa-solid fa-eye"></i>
+                        5149
+                    </h4>
+                </div>
+                <h2 class="text-2xl text-[#051d39] font-semibold pt-2">2-ci Ordu Korpusunun komandiri dəyişdi,
+                    Mayis
+                    Bərxudarov sərəncama götürüldü
+                </h2>
+            </div>
+        </div>
+        <!-- gallery cards -->
+        <div id="gallery" class="grid grid-cols-1 lg:my-36  md:grid-cols-2 lg:grid-cols-3 md:gap-6 container  mx-auto">
+            <div class="w-full  ">
+                <img class="md:rounded-t-md w-full"
+                    src="https://images.oxu.az/2024/10/06/JWMEEKeMRJYZScHr3LpeyqS9vYdTmCZVkPiXzewj:600.jpg"
+                    alt="Taksi sürücüləri üçün növbəti imtahan keçirilib: 1 735 namizəd uğur qazanıb" width="300"
+                    height="200">
+                <div class="p-4 bg-gray-50 md:rounded-b-md">
+                    <div class="flex justify-between py-4">
+                        <h4 class="uppercase text-sm text-gray-500 font-bold"><i
+                                class="fa-regular fa-calendar-days"></i> 4 okt, 2024 / 12:30</h4>
+                        <h4 class="uppercase text-sm text-gray-500 font-bold pl-6"><i class="fa-solid fa-eye"></i> 5149
+                        </h4>
+                    </div>
+                    <h2 class="text-2xl text-[#051d39] font-semibold pt-2">Taksi sürücüləri üçün növbəti imtahan
+                        keçirilib: 1 735 namizəd uğur qazanıb</h2>
+                    <div class="flex py-4 justify-between items-center">
+                        <h4 class="uppercase text-sm text-[#1894A0] font-bold">Ordu</h4>
+                        <div class="flex gap-4 text-lg">
+                            <p>
+                                <i class="fa-regular fa-thumbs-up pr-2"></i>
+                                <span class="text-gray-400 font-semibold">2</span>
+                            </p>
+                            <p>
+                                <i class="fa-regular fa-thumbs-down pr-2"></i>
+                                <span class="text-gray-400 font-semibold">1</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full ">
+                <img class="md:rounded-t-md w-full"
+                    src="https://images.oxu.az/2024/10/06/JWMEEKeMRJYZScHr3LpeyqS9vYdTmCZVkPiXzewj:600.jpg"
+                    alt="Taksi sürücüləri üçün növbəti imtahan keçirilib: 1 735 namizəd uğur qazanıb" width="300"
+                    height="200">
+                <div class="p-4 bg-gray-50 md:rounded-b-md">
+                    <div class="flex justify-between py-4">
+                        <h4 class="uppercase text-sm text-gray-500 font-bold"><i
+                                class="fa-regular fa-calendar-days"></i> 4 okt, 2024 / 12:30</h4>
+                        <h4 class="uppercase text-sm text-gray-500 font-bold pl-6"><i class="fa-solid fa-eye"></i> 5149
+                        </h4>
+                    </div>
+                    <h2 class="text-2xl text-[#051d39] font-semibold pt-2">Taksi sürücüləri üçün növbəti imtahan
+                        keçirilib: 1 735 namizəd uğur qazanıb</h2>
+                    <div class="flex py-4 justify-between items-center">
+                        <h4 class="uppercase text-sm text-[#1894A0] font-bold">Ordu</h4>
+                        <div class="flex gap-4 text-lg">
+                            <p>
+                                <i class="fa-regular fa-thumbs-up pr-2"></i>
+                                <span class="text-gray-400 font-semibold">2</span>
+                            </p>
+                            <p>
+                                <i class="fa-regular fa-thumbs-down pr-2"></i>
+                                <span class="text-gray-400 font-semibold">1</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full ">
+                <img class="md:rounded-t-md w-full"
+                    src="https://images.oxu.az/2024/10/06/JWMEEKeMRJYZScHr3LpeyqS9vYdTmCZVkPiXzewj:600.jpg"
+                    alt="Taksi sürücüləri üçün növbəti imtahan keçirilib: 1 735 namizəd uğur qazanıb" width="300"
+                    height="200">
+                <div class="p-4 bg-gray-50 md:rounded-b-md">
+                    <div class="flex justify-between py-4">
+                        <h4 class="uppercase text-sm text-gray-500 font-bold"><i
+                                class="fa-regular fa-calendar-days"></i> 4 okt, 2024 / 12:30</h4>
+                        <h4 class="uppercase text-sm text-gray-500 font-bold pl-6"><i class="fa-solid fa-eye"></i> 5149
+                        </h4>
+                    </div>
+                    <h2 class="text-2xl text-[#051d39] font-semibold pt-2">Taksi sürücüləri üçün növbəti imtahan
+                        keçirilib: 1 735 namizəd uğur qazanıb</h2>
+                    <div class="flex py-4 justify-between items-center">
+                        <h4 class="uppercase text-sm text-[#1894A0] font-bold">Ordu</h4>
+                        <div class="flex gap-4 text-lg">
+                            <p>
+                                <i class="fa-regular fa-thumbs-up pr-2"></i>
+                                <span class="text-gray-400 font-semibold">2</span>
+                            </p>
+                            <p>
+                                <i class="fa-regular fa-thumbs-down pr-2"></i>
+                                <span class="text-gray-400 font-semibold">1</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <footer class="bg-gray-100">
+        <div class="container mx-auto px-6 lg:flex lg:gap-3 lg:justify-between">
+            <div class="lg:max-w-[700px]">
+                <img src="https://images.oxu.az/statics/AVOjWzrES8VbbZviU57gbi49tXeYNis7PgTFdHgd.svg" alt="Oxu.az"
+                    class="default-logo py-12" width="135" height="20">
+                <p>Bütün hüquqlar qorunur © 2013-2024</p>
+                <p class="py-4">Oxu.Az 24 saat ərzində, Azərbaycan və rus dillərində, ölkədə və dünyada baş verən ən
+                    aktual
+                    və maraqlı
+                    hadisələr barədə operativ xəbərlər, oxucuları və cəmiyyəti maraqlandıran suallara cavablar, analitik
+                    məqalələr, foto və videohesabatlar hazırlayır. </p>
+                <div class="flex flew-wrap w-full text-xl  gap-4 py-4">
+                    <i class="fa-brands fa-square-facebook text-[#1877f2] rounded-full p-4 bg-[#c0d6f0]"></i>
+                    <i class="fa-brands fa-whatsapp rounded-full text-[#25d366] p-4 bg-[#bfeacf]"></i>
+                    <i class="fa-brands fa-telegram rounded-full text-[#0088cc] p-4 bg-[#b6d8e8]"></i>
+                    <i class="fa-brands fa-instagram rounded-full text-[#de4280] p-4 bg-[#e9cfe2]"></i>
+                    <i class="fa-brands fa-apple rounded-full p-4 text-gray-600 bg-white"></i>
+                    <i class="fa-brands fa-google-play rounded-full p-4 text-[#4acec7] bg-white"></i>
+                </div>
+            </div>
+            <div
+                class="flex flex-col md:flex-row justify-between py-6 max-w-[600px] gap-3 lg:self-end lg:py-0 lg:pb-16">
+                <div>
+                    <div>
+                        <h4 class="font-semibold text-lg">Karyera</h4>
+                        <a href="#" class="underline cursor-pointer pt-2">cv@oxu.az</a>
+                    </div>
+                    <div class="flex flex-col pt-3">
+                        <h4 class="font-semibold text-lg">Ümumi sorğular üçün</h4>
+                        <a href="#" class="underline cursor-pointer pt-2">editor@oxu.az</a>
+                        <a href="#" class="underline cursor-pointer">055 224 76 86</a>
+                    </div>
+                </div>
+                <div class="underline flex flex-col">
+                    <a href="#" class="cursor-pointer">Saytda reklam</a>
+                    <a href="#" class="cursor-pointer">Bizimlə əlaqə</a>
+                    <a href="#" class="cursor-pointer">Məxfilik siyasəti</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.mySwiper', {
+            slidesPerView: 'auto',
+            spaceBetween: 10,
+            freeMode: true,
+            slidesPerView: 1,
+            spaceBetween: 30,
+        });
+    </script>
+    <script src="/js/app.js"></script>
+</body>
+
+</html>
